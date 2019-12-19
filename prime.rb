@@ -4,7 +4,7 @@ def prime?(int)
   else
     if
       (2..int).any?{|i| int & i == 0}
-      return false  
+      return false
     else
     return true
     end
