@@ -3,7 +3,7 @@ def prime?(int)
     return false
   else
     if
-      (2..int).any?{|i| int & i == 0}
+      (2..int).any? {|i| int % i == 0}
       return false
     else
     return true
