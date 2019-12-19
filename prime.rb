@@ -1,11 +1,14 @@
 def prime?(int)
-  if int < 2
-    puts "#{int} is not a prime number."
+  if int <= 1
     return false
   elsif
-    int >= 2 && (2..int).each {|i| int % i != 0}
-    puts "#{int} is a prime number!"
+    (2..int).any?{|i| int & i == 0}
+    return false
+  else
     return true
-
+    
+    
+    
+    
   end
 end
